@@ -28,19 +28,58 @@
 
     }
     function getExpenses() {
-
+      fetch(apiUri, {
+        method: 'GET',
+        headers: headers
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.table(data);
+          data.forEach(renderExpense);
+        }
+        )
+        .catch(error => console.error(error));
     }
     function postExpense() {
+      // name, amount, category(Food, Transport, Entertainment, Other)
+      const expense = {
+        name: 'Test',
+        amount: '100',
+        category: 'Food'
+      };
+      fetch(apiUri, {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(expense)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.table(data);
+          renderExpense(data);
+        }
+        )
+        .catch(error => console.error(error));
 
     }
-    function deleteExpense(id) {
+    function deleteExpense(pk) {
+      // api uri ends with trailing slash
+      fetch(`${apiUri}${pk}/`, {
+        method: 'DELETE',
+        headers: headers
+      })
+        .then(response => {
+          refreshTable();
+        })
+        .catch(error => console.error(error));
 
     }
     // const table = document.createElement('table');
     // document.body.appendChild(table);
     // refreshTable();
     // document.querySelector("input[type='submit']").addEventListener('click', postExpense);
-    getExpenses();
+    // deleteExpense(3);
+    // getExpenses();
+    // postExpense();
   </script>
 </body>
 
