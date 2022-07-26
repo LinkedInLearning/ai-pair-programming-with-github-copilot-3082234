@@ -21,7 +21,7 @@ To resolve this issue:
 	Commit changes using this command: git commit -m "some message"
 
 ## Installing
-1. To use these exercise files, you must have the following installed:
+1. To use these exercise files with a unix terminal:
 	- make sure you have [python3 available here](https://www.python.org/)
 	- navigate to `cd expense_calculator/`
 	- run `git checkout 04_02`
