@@ -22,13 +22,14 @@ To resolve this issue:
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+	- make sure you have [python3 available here](https://www.python.org/)
+	- navigate to `cd expense_calculator/`
+	- run `git checkout 04_02`
+	- run `pwd` and make sure that the path ends with `ai-pair-programming-with-github-copilot-3082234/expense_calculator/`
+	- create a python virtual env to isolate dependencies `python3 -m venv venv`
+	- activate the virtual env 'source venv/bin/activate'
+	- run `python manage.py migrate` to setup the database
+	- run `python manage.py runserver`
+	- visit <http://localhost:8000/> or <http://localhost:8000/api/expenses/>
 
-
-[0]: # (Replace these placeholder URLs with actual course URLs)
-
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
 
