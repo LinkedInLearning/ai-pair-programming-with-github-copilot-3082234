@@ -14,35 +14,33 @@
 
 <body>
   <div class="container">
-    <h1>expense tracker</h1>
 
-    <table></table>
   </div>
   <script>
     const apiUri = '/api/expenses/';
     const headers = {
       'Content-Type': 'application/json'
     };
+    function renderExpense(expense) {
+      console.table(expense);
+    }
+    function refreshTable() {
+
+    }
     function getExpenses() {
-      // get expenses and use renderExpenseTable
 
     }
     function postExpense() {
 
     }
-    function deleteExpense(pk) {
+    function deleteExpense(id) {
 
     }
-    function renderExpenseTable(expenses) {
-      expenses.forEach(expense => {
-        console.table(expense);
-      });
-      
-    }
-    function refreshTable() {
-
-    }
-    refreshTable();
+    // const table = document.createElement('table');
+    // document.body.appendChild(table);
+    // refreshTable();
+    // document.querySelector("input[type='submit']").addEventListener('click', postExpense);
+    getExpenses();
   </script>
 </body>
 
