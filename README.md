@@ -1,7 +1,12 @@
 # AI Pair Programming with GitHub Copilot
 This is the repository for the LinkedIn Learning course AI Pair Programming with GitHub Copilot. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
+![AI Pair Programming with GitHub Copilot][lil-thumbnail-url] 
+
+The future of programming is all about collaboration—humans working with machines to achieve exciting and unimagined results. AI pair programming, which integrates human- and machine-generated code, is a prime example of a tool that alleviates tedious, menial tasks to let developers focus their attention on higher-level concerns. In this course, instructor Ronnie Sheer shows you how to get the most out of GitHub Copilot, one of the most useful and impactful new tools for streamlining software development with AI.
+
+Get a comprehensive introduction on how to use Copilot to integrate your coding with the latest AI technology. Ronnie goes over the major features of the application, focusing specifically on Python and JavaScript, and using back-end and front-end Copilot tools. By the end of this course, you’ll be prepared to create data models, implement REST APIs, and write tests, client-side code and templates, HTML, CSS, and more.
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -31,5 +36,21 @@ To resolve this issue:
 	- run `python manage.py migrate` to setup the database
 	- run `python manage.py runserver`
 	- visit <http://localhost:8000/> or <http://localhost:8000/api/expenses/>
+
+
+### Instructor
+
+Ronnie Sheer 
+                            
+Software Developer and Instructor
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/ronnie-sheer).
+
+[lil-course-url]: https://www.linkedin.com/learning/ai-pair-programming-with-github-copilot
+[lil-thumbnail-url]: https://cdn.lynda.com/course/3082234/3082234-1661885119709-16x9.jpg
+
+
 
 
